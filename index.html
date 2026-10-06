@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>filters</title>
-		<style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer">		<style>
 			body{
 				background-color:lightgrey;
 				margin:0px;
@@ -11,6 +11,9 @@
 				display:flex;
 				height:70px;
 				background-color:white;
+				position:sticky;
+				top:0;
+				z-index:2;
 			}
 			.d1{
 			 height:33px;
@@ -25,14 +28,147 @@
 			 text-align:center;
 			 padding-top:6px;
 			}
+			.d2{
+			 height:30px;
+			 width:50%;
+			 border-radius:20px;
+			 border:1px solid blue;
+			 outline:none;
+			 margin:18px 0px 0px 14%;
+			 font-size:22px;
+			 padding-left:15px;
+			 }
+			input{
+			 border-radius:20px;
+			 outline:none;
+			 border:none;
+			 margin-left:15px;
+			 padding-top:7px;
+			 width:90%;
+			 font-size:16px;
+			 }
+			 
+			 section{
+			 height:1600px;
+			 border:1px solid black;
+			 display:flex;
+			 flex-wrap:wrap;
+			 background-color:black;
+			 
+			 }
+			 .d3{
+			 height:290px;
+			 width:260px;
+			 border:0px solid black;
+			 margin:40px 0px 0px 60px;
+			 border-radius:10px;
+			 background-color:#F8FAFC;
+			  filter:drop-shadow(3px 5px 30px white);
+			 
+			 }
+			 .d3:hover{
+			  filter:blur(3px);
+			 }
+			 
+			
+			 .img{
+			  height:100%;
+			  width:100%;
+			  border-radius:10px;
+			 }
+			 .d4{
+			 height:290px;
+			 width:260px;
+			 border:0px solid black;
+			 margin:-17% 0px 0px 60px;
+			 border-radius:10px;
+			 background-color:#F8FAFC;
+			 }
+			 .d4:hover{
+			  filter:brightness(150%);
+			 }
+			 .cont{
+			  border:0px solid black;
+			 }
+			 .cont:hover{
+			  filter:contrast(50%);
+			 }
 		</style>
 		
 	</head>
 	<body>
 		<header>
 			<div class="d1">G</div>
-	  
+			<div class="d2">
+			 <i class="ri-search-line"></i>
+			<input type="text" placeholder="Serach, Photo, Filters">
+			</div>
 		</header>
-	
+		
+		<main>
+			<section>
+				<div class="d3">
+					<img src="https://www.cinematerial.com/p/500x/bpuj768i/mahavatar-indian-movie-poster.jpg?v=1735437206" class="img">
+				
+				</div>
+				<div class="d3">
+					<img src="https://i.pinimg.com/736x/82/01/59/82015997106ee2b18978b44023410507.jpg" class="img">
+				
+				</div>
+				<div class="d3">
+					<img src="https://www.cinematerial.com/p/500x/eercbdc6/bhooth-bangla-indian-movie-poster.jpg?v=1733814576" class="img">
+				
+				</div>
+				<div class="d3">
+					<img src="https://filmfare.wwmindia.com/content/2025/dec/majorbollywoodreleasesin202661766397768.jpg" class="img">
+				
+				</div>
+				
+				
+				<div class="d4" style="">
+					<img src="https://i.ebayimg.com/images/g/0QwAAeSwY5FqMuse/s-l400.jpg" class="img">
+
+				</div>
+				<div class="d4" style="">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu_sASRAtZr21ZSW_iB4E8VopLXbw765ggrP4g9zzL1NmPNn69bAQ68z0&s=10" class="img">
+
+				</div>
+				<div class="d4" style="">
+					<img src="https://i.redd.it/xna3fgheqssf1.jpg" class="img">
+
+				</div>
+				<div class="d4" style="">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT97qGVf3NQF9zmKTY8pjznAEDOq9kWgVcRqFbZisXSVg&s=10" class="img">
+
+				</div>
+				<div class="d4 cont" style="">
+					<img src="https://stat5.bollywoodhungama.in/wp-content/uploads/2026/02/O-Romeo-09-306x393.jpeg" class="img">
+
+				</div>
+				
+				<div class="d4 cont" style="">
+					<img src="https://images.mid-day.com/images/images/2026/may/2026-2.jpg" class="img">
+
+				</div>
+				<div class="d4 cont" style="">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShX2pmxkL8rOyyiRSrjAwObKiqf2AKlyXSofcjRB3WkOH7j2pCl2Sjwbo6&s=10" class="img">
+
+				</div>
+				<div class="d4 cont" style="">
+					<img src="https://d2e1hu1ktur9ur.cloudfront.net/wp-content/uploads/2026/01/Bobby-Simha-new-Movie.jpg" class="img">
+
+				</div>
+				
+				<div class="d4 gray">
+				
+				</div>
+				
+				
+				
+			</section>
+			
+			
+			<section></section>
+		</main>
 	</body>
 </html>
