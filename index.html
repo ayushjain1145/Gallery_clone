@@ -34,7 +34,7 @@
 			 border-radius:20px;
 			 border:1px solid blue;
 			 outline:none;
-			 margin:18px 0px 0px 14%;
+			 margin:18px 0px 0px 12%;
 			 font-size:22px;
 			 padding-left:15px;
 			 }
@@ -47,9 +47,19 @@
 			 width:90%;
 			 font-size:16px;
 			 }
-			 
+			 .sp{
+			  font-size:18px;
+			  font-family:arial, sans-sarif;
+			  margin:25px 0px 0px 3%;
+			  text-decoration:none;
+			  color:black;
+			 }
+			 .sp:hover{
+			  color:purple;
+			  
+			 }
 			 section{
-			 height:1600px;
+			 height:2700px;
 			 border:1px solid black;
 			 display:flex;
 			 flex-wrap:wrap;
@@ -93,6 +103,39 @@
 			 .cont:hover{
 			  filter:contrast(50%);
 			 }
+			 .gray:hover{
+			  filter:grayscale(100%);
+			 }
+			 .hue105{
+			  border:0px solid black;
+			 }
+			 .hue105:hover{
+			  filter:hue-rotate(105deg);
+			 }
+			 .hue190{
+			  border:0px solid black;
+			 }
+			 .hue190:hover{
+			  filter:hue-rotate(190deg);
+			 }
+			 .hue180{
+			  border:0px solid black;
+			 }
+			 .hue180:hover{
+			  filter:hue-rotate(270deg);
+			 }
+			 .inv{
+			 border:0px solid black;
+			 }
+			 .inv:hover{
+			  filter:invert(90%);
+			 }
+			 .opa{
+			 border:0px solid black;
+			 }
+			 .opa:hover{
+			 filter:opacity(30%);	
+			 }
 		</style>
 		
 	</head>
@@ -103,6 +146,10 @@
 			 <i class="ri-search-line"></i>
 			<input type="text" placeholder="Serach, Photo, Filters">
 			</div>
+			<span class="sp">Explore</span>
+			<a href="#fav" class="sp"><span class="sp">Favorites</span></a>
+			<span class="sp">Fashion</span>
+
 		</header>
 		
 		<main>
@@ -159,16 +206,63 @@
 
 				</div>
 				
-				<div class="d4 gray">
-				
+				<div class="d4 gray" id="fav">
+					<img src="https://cdn.district.in/movies-assets/images/cinema/Drishyam-3-poster-a627a520-df27-11f0-977a-e352e9e9fbec.jpg?im=Resize,width=400" class="img">
+				 
 				</div>
 				
+				<div class="d4 gray">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0D4fB9P9Q3zacrwCnarZNyYO-a2ZgPrFvWZvDND2wAg&s=10" class="img">
+				 
+				</div>
 				
+				<div class="d4 gray">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU2QfR6bqdRuXScPJSy7kpjGY4p0aX-o89pyY8ELEnKmQ0MD3PVjOXvLg&s=10" class="img">
+				 
+				</div>
+				
+				<div class="d4 gray">
+					<img src="https://m.media-amazon.com/images/M/MV5BYjU3MTE5NjgtMzUxNy00MjIxLThkMDUtZDYxZWQ3YTY1MTljXkEyXkFqcGc@._V1_.jpg" class="img">
+				 
+				</div>
+				
+				<div class="d4 hue105">
+					<img src="https://cdn.district.in/movies-assets/images/cinema/_Cover-1ecc1290-961b-11f1-8483-eb84b060bac3.jpg" class="img">
+				</div>
+				
+				<div class="d4 hue190">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRorS1o_Ta9ybmaoU2obeR2jEFMApEgg9TfG4E0TR5mvg&s=10" class="img">
+				</div>
+				<div class="d4 hue180">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvSfEVf5vc7UDQ7jmFYgWoZ0TjjfrmoDsyzFlIl-b2eZJ-pW4p0QlFTg0&s=10" class="img">
+				</div>
+				
+				<div class="d4 hue">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJgLS79jtt4A5TxJ_QJsYwkpUTyn4Oh9YxX6kQ1qUg3pUfN4NUocBWdc&s=10" class="img">
+				</div>
+				
+				<div class="d4 inv">
+					<img src="https://cinematimes.in/wp-content/uploads/2026/05/Toxic-745x1024.jpg" class="img">
+				</div>
+				<div class="d4 inv">
+					<img src="https://preview.redd.it/new-posters-of-alpha-v0-2vnvrj67pd8h1.jpg?width=640&crop=smart&auto=webp&s=e4a12805776a16c906d513acbfd8ccf99acef8eb" class="img">
+				</div>
+				
+				<div class="d4 inv">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV1uzu7ec-v8tPOmk4-lS_ja3Jy3aBStLOqWfHA7VL9fO777C1M-NKmo&s=10" class="img">
+				</div>
+				
+				<div class="d4 inv">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFFCOD3nqahiRBTj7oW-1XrEQ0noS55XuN3st3ODapqujyhkgM1LJxilE&s=10" class="img">
+				</div>
+				
+				<div class="d4 opa">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFFCOD3nqahiRBTj7oW-1XrEQ0noS55XuN3st3ODapqujyhkgM1LJxilE&s=10" class="img">
+				</div>
 				
 			</section>
 			
 			
-			<section></section>
 		</main>
 	</body>
 </html>
