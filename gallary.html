@@ -10,9 +10,9 @@
 			}
 			header{
 			 height:60px;
-			 background-color:lightgrey;
+			 background-color:#FBFBFB;
 			 display:flex;
-			 border-bottom:2px solid black;
+			 border-bottom:2px solid #C0E1D2;
 			 position:sticky;
 			 top:0;
 			 z-index:2;
@@ -58,7 +58,7 @@
 			  text-align:center;
 			  font-size:18px;
 			  font-family:arial, sans-sarif;
-			  background-color:#f4f6f9;
+			  background-color:#DCC3AA;
 			  margin:15px 0px 0px 30px;
 			  padding-top:5px;
 			 }
@@ -66,12 +66,10 @@
 			  background-color:lightgrey;
 			  border:1px solid blue;
 			 }
-			 
-			 
 			 .section{
 			  height:1200px;
 			  width:90%;
-			  background-color:#F5F5F0;
+			  background-color:#E6F2DD;
 			  margin:30px 0px 0px 70px;
 			  border-radius:15px;
 			  display:flex;
@@ -110,8 +108,20 @@
 			.cont{
 			 filter:contrast(30%);
 			}
+			.hue{
+			 filter:hue-rotate(200deg);
+			}
+			.invert{
+			 filter:invert(80%);
+			}
+			.saturat{
+			 filter:saturate(90%);
+			}
+			.opacity{
+			 filter:opacity(10%);
+			}
 			.imgg:hover{
-			 filter:brightness(90%);
+			 filter:brightness(100%);
 			}
 			.img:hover{
 			 filter:brightness(100%);
@@ -120,6 +130,14 @@
 			 font-size:16px;
 			 font-family:arial, sans-sarif;
 			 text-align:center;
+			}
+			
+			.border{
+			 border:2px solid #F5AFAF;
+			}
+			
+			.fil{
+			 filter:invert(100%);
 			}
 		</style>
 	</head>
@@ -222,7 +240,7 @@
 				<div class="d4">	
 					<div class="d5">
 						<figure>
-							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-5xZf7mQT2p4R-p6d1jFRLnZF7x7pQHf2aYgaduoFLXdtg3jRTYXYFg4G&s=10" class="imgg">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-5xZf7mQT2p4R-p6d1jFRLnZF7x7pQHf2aYgaduoFLXdtg3jRTYXYFg4G&s=10" class="imgg cont">
 						
 							<figcaption> <pre>This image are grey but you<br>can hover image is orignal.<br>Curser are image  is clear.</pre></figcaption>
 						</figure>
@@ -232,7 +250,7 @@
 				<div class="d4">	
 					<div class="d5">
 						<figure>
-							<img src="https://assets.architecturaldigest.in/photos/62026064b5d9eefa7e4e2ddf/3:2/w_1620,h_1080,c_limit/How%20to%20furnish%20your%20home%20on%20a%20budget.jpg" class="imgg">
+							<img src="https://assets.architecturaldigest.in/photos/62026064b5d9eefa7e4e2ddf/3:2/w_1620,h_1080,c_limit/How%20to%20furnish%20your%20home%20on%20a%20budget.jpg" class="imgg cont">
 						
 							<figcaption> <pre>This image are grey but you<br>can hover image is orignal.<br>Curser are image  is clear.</pre></figcaption>
 						</figure>
@@ -244,44 +262,162 @@
 				
 			</section>
 			
-			<section class="section">
+			<section class="section" style="background-color:#FDF4D2">
 			
-				<div class="d4">	
+				<div class="d4 border">	
 					<div class="d5">
 						<figure>
-							<img src="https://assets.architecturaldigest.in/photos/62026064b5d9eefa7e4e2ddf/3:2/w_1620,h_1080,c_limit/How%20to%20furnish%20your%20home%20on%20a%20budget.jpg" class="imgg">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL8_vLED5M2ojgnmh7psHyudmYQX-ShLULOw3nBnmpcA&s" class="imgg hue">
+						
+							<figcaption> <pre>This image are color is <br>change but you can hover<br> image is orignal.</pre></figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<div class="d4 border">	
+					<div class="d5">
+						<figure>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzbMvbBYJZHoIjW4PXvchUM1Onz3qwYxQudPjucFKVkuXtqp-1dMOblBk&s=10" class="imgg hue">
+						
+							<figcaption> <pre>This image are color is <br>change but you can hover<br> image is orignal.</pre></figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<div class="d4 border">	
+					<div class="d5">
+						<figure>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYpSgwyw5E4tbYBQ2BNMwga3Dfx4gWnldl6u3td7-pBlmOYDtT8pmIX9Q&s=10" class="imgg hue">
+						
+							<figcaption> <pre>This image are color is <br>change but you can hover<br> image is orignal.</pre></figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<div class="d4 border">	
+					<div class="d5">
+						<figure>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKlzNVb0nhc_FiO_0F4eHcIP6oQDa8OaqVrfSJr6jqdg&s=10" class="imgg invert">
 						
 							<figcaption> <pre>This image are grey but you<br>can hover image is orignal.<br>Curser are image  is clear.</pre></figcaption>
 						</figure>
 					</div>
 				</div>
 				
-				<div class="d4">	
+				<div class="d4 border">	
 					<div class="d5">
 						<figure>
-							<img src="https://assets.architecturaldigest.in/photos/62026064b5d9eefa7e4e2ddf/3:2/w_1620,h_1080,c_limit/How%20to%20furnish%20your%20home%20on%20a%20budget.jpg" class="imgg">
+							<img src="https://www.floralhub.in/cdn/shop/files/FA-25-A-LP-F_1.png?v=1782458257" class="imgg invert">
 						
 							<figcaption> <pre>This image are grey but you<br>can hover image is orignal.<br>Curser are image  is clear.</pre></figcaption>
 						</figure>
 					</div>
-				</div><div class="d4">	
+				</div>
+				
+				<div class="d4 border">	
 					<div class="d5">
 						<figure>
-							<img src="https://assets.architecturaldigest.in/photos/62026064b5d9eefa7e4e2ddf/3:2/w_1620,h_1080,c_limit/How%20to%20furnish%20your%20home%20on%20a%20budget.jpg" class="imgg">
+							<img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1191062920.jpg?crop=1.00xw:0.834xh;0,0.0420xh" class="imgg invert">
 						
 							<figcaption> <pre>This image are grey but you<br>can hover image is orignal.<br>Curser are image  is clear.</pre></figcaption>
 						</figure>
 					</div>
-				</div><div class="d4">	
+				</div>
+				
+				<div class="d4 border">	
 					<div class="d5">
 						<figure>
-							<img src="https://assets.architecturaldigest.in/photos/62026064b5d9eefa7e4e2ddf/3:2/w_1620,h_1080,c_limit/How%20to%20furnish%20your%20home%20on%20a%20budget.jpg" class="imgg">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_t9lzSRlWNBxSTLEWZpx9Qvt0HO2FfQvGchICrJfFPUS7DYSZ-HHmJeUj&s=10" class="imgg saturate">
+						
+							<figcaption> <pre>This image are grey but you<br>can hover image is orignal.<br>Curser are image  is clear.</pre></figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<div class="d4 border">	
+					<div class="d5">
+						<figure>
+							<img src="https://i.pinimg.com/736x/c5/6f/99/c56f995b09ee7a32f89165a4386f51fe.jpg" class="imgg saturate">
+						
+							<figcaption> <pre>This image are grey but you<br>can hover image is orignal.<br>Curser are image  is clear.</pre></figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<div class="d4 border">	
+					<div class="d5">
+						<figure>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ66S1ZMHIgeyhJ1LGCawxgYMeWAmsPFyOwjeN506AV7g&s" class="imgg invert">
 						
 							<figcaption> <pre>This image are grey but you<br>can hover image is orignal.<br>Curser are image  is clear.</pre></figcaption>
 						</figure>
 					</div>
 				</div>
 			</section>
+			
+			<section class="section" style="background-color:#FDF4D2">
+			
+				<div class="d4 border">	
+					<div class="d5">
+						<figure>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP-SGO6edz0Xc7s2Krp1bURfZKA82anmdjayuQoVEOphnpA4WsZ7I6PJQ&s=10" class="imgg opacity">
+						
+							<figcaption> <pre>This image are color is <br>change but you can hover<br> image is orignal.</pre></figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<div class="d4 border">	
+					<div class="d5">
+						<figure>
+							<img src="https://i.pinimg.com/736x/53/8f/2c/538f2c05dbbc612fbb1ab9241bcb12cb.jpg" class="imgg opacity">
+						
+							<figcaption> <pre>This image are color is <br>change but you can hover<br> image is orignal.</pre></figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<div class="d4 border">	
+					<div class="d5">
+						<figure>
+							<img src="https://www.pixelstalk.net/wp-content/uploads/images6/Lock-Screen-Cute-Wallpaper-HD-Free-download.jpg" class="imgg opacity">
+						
+							<figcaption> <pre>This image are color is <br>change but you can hover<br> image is orignal.</pre></figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<div class="d4 border">	
+					<div class="d5">
+						<figure>
+							<img src="https://img.magnific.com/free-vector/colored-hacker-code-realistic-composition-with-person-creates-codes-hacking-stealing-information-vector-illustration_1284-18005.jpg?semt=ais_hybrid&w=740&q=80" class="imgg fil">
+						
+							<figcaption> <pre>This image are color is <br>change but you can hover<br> image is orignal.</pre></figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<div class="d4 border">	
+					<div class="d5">
+						<figure>
+							<img src="https://www.pixelstalk.net/wp-content/uploads/images6/Lock-Screen-Cute-Wallpaper-HD-Free-download.jpg" class="imgg opacity">
+						
+							<figcaption> <pre>This image are color is <br>change but you can hover<br> image is orignal.</pre></figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<div class="d4 border">	
+					<div class="d5">
+						<figure>
+							<img src="https://www.pixelstalk.net/wp-content/uploads/images6/Lock-Screen-Cute-Wallpaper-HD-Free-download.jpg" class="imgg opacity">
+						
+							<figcaption> <pre>This image are color is <br>change but you can hover<br> image is orignal.</pre></figcaption>
+						</figure>
+					</div>
+				</div>
+				
+			</section>	
 		</main>
 	</body>
 </html>
